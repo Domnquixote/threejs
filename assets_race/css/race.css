@@ -1,0 +1,193 @@
+.canvas {
+  /* border: 1px solid #ccc; */
+  width: 10%;
+}
+/* DESABILITAÇÃO MOUSE DIREITO MODAL */
+img{
+  pointer-events: none;
+}
+/**/
+
+/*MODAL*/
+.modal-content{
+  min-width: 120vh;
+  min-height: 70vh;
+}
+
+.modal2{
+  width: 100%!important;
+  height: 100%!important;
+  background-color: #a1c4fd;
+}
+
+.modal-body{
+  background-image: linear-gradient(90deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+/**/
+
+/*CONTAGEM 321*/
+.contagem:after {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 5vh;
+  counter-reset: my-count 3;
+  animation: countdown 5s linear forwards;
+  content: counter(my-count);
+  font-size: 10em;
+}
+
+
+@keyframes countdown {
+  0% {
+  }
+  20% {
+    counter-increment: my-count -1;
+  }
+  40% {
+    counter-increment: my-count -2;
+  }
+  60% {
+    counter-increment: my-count -3;
+  }
+  80% {
+    counter-increment: my-count -4;
+    opacity: 1;
+  }
+  100% {
+    content: "GO";
+    opacity: 0;
+  }
+}
+/**/
+
+/* ANIMAÇÕES ILHAS */
+
+.bounce{
+  animation: bounce 6s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0%{
+    transform: rotate(3deg) translate(0px, -3px);
+  }
+  50%{
+    transform: rotate(-3deg) translate(0px, 3px);
+  }
+  100%{
+    transform: rotate(3deg) translate(0px, -3px);
+  }
+}
+
+.bounce2{
+  animation: bounce2 6s ease-in-out infinite;
+}
+
+@keyframes bounce2 {
+  0%{
+    transform: rotate(-3deg) translate(0%, 3%);
+  }
+  50%{
+    transform: rotate(3deg) translate(0%, -3%);
+  }
+  100%{
+    transform: rotate(-3deg) translate(0%, 3%);
+  }
+}
+
+.fundo{
+  animation: main 40s linear infinite;
+}
+
+@keyframes main {
+  0%{
+transform: scale(1,1);
+  }
+  16%{
+    transform: scale(1,1) translate(0%,0%);
+  }
+  100%{
+transform: scale(100%,140%) translate(0%,-12%);
+  }
+}
+/**/
+
+/*ANIMAÇÕES NUVENS*/
+.nuvem{
+  animation: voador 50s linear infinite;
+}
+
+@keyframes voador {
+  0%{
+    transform: translate(0%,-190%);
+  }
+
+
+100%{
+  transform: translate(100%,-220%);
+}
+}
+
+.nuvem2{
+  animation: voador2 40s linear infinite;
+}
+
+@keyframes voador2 {
+  0%{
+    transform: translate(-80%,-150%);
+  }
+
+
+100%{
+  transform: translate(100%,-130%);
+}
+}
+
+.nuvem3{
+  animation: voador3 40s linear infinite;
+}
+
+@keyframes voador3 {
+  0%{
+    transform: translate(0%,-150%);
+  }
+
+
+100%{
+  transform: translate(100%,-200%);
+}
+}
+
+
+
+.nuvem4{
+  animation: voador4 46s linear infinite;
+}
+
+@keyframes voador4 {
+  0%{
+    transform: translate(100%,-130%);
+  }
+
+
+100%{
+  transform: translate(-100%,-130%);
+}
+}
+/* */
+
+/* RESPONSIVO */
+@media (max-width: 968px) {
+  .modal-content{
+    min-width: 100%;
+    min-height: 35vh;
+    height: 100%;
+  }
+  .icon110, .icon18, .icon16, .icon14, .icon12{
+    width: 30px;
+  }
+  .position-text{
+    font-size: 4vh!important;
+  }
+}

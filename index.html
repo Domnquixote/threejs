@@ -4,17 +4,106 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Domn's Lair</title>
-    <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Secular+One">
+
+            <!-- CSS -->
+            <link href="style.css" rel="stylesheet">
+
+            <!-- GOOGLE FONT -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Secular+One">
+
+            <!-- FONT AWESOME -->
+            <script src="https://kit.fontawesome.com/30f961040e.js" crossorigin="anonymous"></script>
+
+            <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
   </head>
   <body>
-    <div class="container-fluid" style="z-index: 9; position:fixed; top: 0;">
-      <div class="row align-items-end" >
-        <div class="col-12 text-center" style="background-color: #080808; color: aliceblue; font-family: Secular; font-size: 3vh;"><span>Site em construção, aguarde!!</span></div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="assets/duck.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+          
+        </a>
+        <a class="navbar-brand">Domn Dev</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-center justify-content-center" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active " aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="text-center nav-link active" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-title="THREEJS" data-bs-content="Esta página é a combinação de THREEJS + Bootstrap! | teste o responsivo clicando com o direito no menu e em inspecionar elemento | Controles: Use o click esquerdo do mouse para orbirtar e o direito para movimentar a camera!">Explicações</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Links/projetos
+              </a>
+              <ul class="dropdown-menu text-center dropdown-menu-dark">
+                <li><a class="dropdown-item" href="race.html" target="_blank" rel="noopener noreferrer">Projeto CANVAS</a></li>
+                <li><a class="dropdown-item" href="#" target="_blank" rel="noopener noreferrer">Projeto Dashboard</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item">Obrigado pela atenção</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-    <script type="module" src="main.js"></script>
+    </nav>
+    <!-- NAVBAR FINAL -->
+
+        <!-- THREEJS -->
+        <script type="module" src="main.js"></script>
+        <div class="threejs h-100 w-100"></div>
+        <!-- THREEJS FINAL -->
+
+    <footer class="bg-dark text-center text-white fixed-bottom">
+      <div class="status"></div>
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <!-- <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-facebook"></i
+          ></a> -->
+    
+          <!-- Twitter -->
+          <!-- <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-twitter"></i
+          ></a> -->
+    
+          <!-- Instagram -->
+          <!-- <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-instagram"></i
+          ></a> -->
+    
+          <!-- Linkedin -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/yuri-maia-a4a951a6/" role="button"
+          target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i
+          ></a>
+    
+          <!-- Github -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/Domnquixote" role="button"
+          target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+    
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2022 Copyright:
+        <a class="text-white" href="https://domn-dev.web.app">Domn</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+
   </body>
 </html>

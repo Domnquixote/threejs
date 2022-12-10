@@ -1,0 +1,42 @@
+READ ME
+
+Glosario
+
+	Clonias
+
+		Amazonic - 01
+		Drizzle - 02
+		Dunes - 03
+		Ember - 04
+		Winter - 05
+
+	Personagen
+
+		Abelha			- bee
+		Aranha			- spi
+		Besouro Azul		- blb
+		Besouro Hercules	- blh
+		Borboleta		- but
+		Escorpião		- sco
+		Formiga			- ant
+		Joaninha		- lad
+		Libelula		- dra
+		Louva-a-Deus		- man
+		Mariposa		- mot
+		Mosca			- fly
+		Mosquito		- mos
+		Pulga			- fle
+		Vagalume		- fir
+		Vespa			- was
+
+	Raridade
+		Épico		 - 04
+		Super-Raro	 - 03
+		Raro		 - 02
+		Comum 		 - 01
+
+
+/IMG
+	/Corrida
+		/Giffs
+			
